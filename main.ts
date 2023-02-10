@@ -36,7 +36,7 @@ input.onButtonPressed(Button.B, function () {
     strip.show()
 })
 let strip: neopixel.Strip = null
-strip = neopixel.create(DigitalPin.P1, 5, NeoPixelMode.RGB)
+strip = neopixel.create(DigitalPin.P0, 5, NeoPixelMode.RGB)
 strip.showRainbow(1, 360)
 strip.show()
 strip.easeBrightness()
