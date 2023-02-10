@@ -16,6 +16,7 @@ input.onButtonPressed(Button.A, function () {
 input.onLogoEvent(TouchButtonEvent.Touched, function () {
     strip.showRainbow(1, 360)
     basic.showIcon(IconNames.Pitchfork)
+    basic.pause(2000)
     strip.clear()
     strip.show()
     basic.clearScreen()
@@ -30,6 +31,7 @@ let strip: neopixel.Strip = null
 strip = neopixel.create(DigitalPin.P0, 5, NeoPixelMode.RGB)
 strip.showRainbow(1, 360)
 strip.show()
+strip.easeBrightness()
 basic.showString("Ahoj! Volam sa ZAPET")
 kitronik_servo_lite.turnLeft(360)
 strip.clear()
