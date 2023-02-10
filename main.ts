@@ -22,6 +22,7 @@ input.onLogoEvent(TouchButtonEvent.Touched, function () {
     basic.clearScreen()
 })
 input.onButtonPressed(Button.B, function () {
+    basic.showIcon(IconNames.StickFigure)
     strip.showColor(neopixel.colors(NeoPixelColors.Blue))
     basic.pause(2000)
     strip.clear()
@@ -34,6 +35,7 @@ input.onButtonPressed(Button.B, function () {
     basic.pause(2000)
     strip.clear()
     strip.show()
+    basic.clearScreen()
 })
 let strip: neopixel.Strip = null
 strip = neopixel.create(DigitalPin.P0, 5, NeoPixelMode.RGB)
