@@ -14,12 +14,16 @@ input.onButtonPressed(Button.A, function () {
     basic.clearScreen()
 })
 input.onLogoEvent(TouchButtonEvent.Touched, function () {
-    strip.showRainbow(1, 360)
-    basic.showIcon(IconNames.Pitchfork)
-    basic.pause(2000)
-    strip.clear()
-    strip.show()
-    basic.clearScreen()
+    for (let index = 0; index < 4; index++) {
+        strip.showRainbow(1, 360)
+        basic.showIcon(IconNames.Heart)
+        basic.pause(500)
+        basic.showIcon(IconNames.SmallHeart)
+        basic.pause(500)
+        strip.clear()
+        strip.show()
+        basic.clearScreen()
+    }
 })
 input.onButtonPressed(Button.B, function () {
     for (let index = 0; index < 4; index++) {
